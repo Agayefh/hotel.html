@@ -3,102 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Hotel</title>
+    <meta name="description" content="Otelin rəsmi vebsaytı.">
+    <title>Hotel Saytı</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #003366;
+            background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 10px 0;
             text-align: center;
         }
         nav {
-            background-color: #00509e;
-            padding: 10px;
             text-align: center;
+            background-color: #444;
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
+            display: inline-block;
         }
-        section {
-            padding: 30px;
+        nav a:hover {
+            background-color: #575757;
         }
-        .room, .service {
-            background-color: white;
+        .hero {
+            background-image: url('hotel-image.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
             padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #ccc;
+        }
+        .room-card {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .room-card img {
+            width: 100%;
         }
         footer {
-            background-color: #003366;
+            background-color: #333;
             color: white;
+            padding: 10px 0;
             text-align: center;
-            padding: 15px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #575757;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Dream Hotel</h1>
-        <p>Rahatlığın və lüksün ünvanı</p>
-    </header>
+<header>
+    <h1>Hotel Saytına Xoş Gəlmisiniz</h1>
+</header>
 
-    <nav>
-        <a href="#about">Haqqımızda</a>
-        <a href="#rooms">Otaqlar</a>
-        <a href="#services">Xidmətlər</a>
-        <a href="#contact">Əlaqə</a>
-    </nav>
+<nav>
+    <a href="#about">Haqqında</a>
+    <a href="#rooms">Otaqlar</a>
+    <a href="#services">Xidmətlər</a>
+    <a href="#contact">Əlaqə</a>
+</nav>
 
-    <section id="about">
-        <h2>Haqqımızda</h2>
-        <p>Dream Hotel sizə şəhərin mərkəzində lüks və rahat qalmaq imkanı təqdim edir. Otelimiz həm işgüzar, həm də istirahət məqsədli səfərlər üçün mükəmməldir.</p>
-    </section>
+<div class="hero">
+    <h1>Ən Yaxşı İstirahət üçün Bizə Gəlin</h1>
+    <p>Gözəl təbii mənzərə, müasir otaqlar və unudulmaz təcrübə</p>
+</div>
 
-    <section id="rooms">
-        <h2>Otaqlarımız</h2>
-        <div class="room">
-            <h3>Standart Otaq</h3>
-            <p>İki nəfərlik yataq, pulsuz Wi-Fi, kondisioner və səhər yeməyi daxil.</p>
-        </div>
-        <div class="room">
-            <h3>Deluxe Otaq</h3>
-            <p>Dəniz mənzərəsi, kral ölçülü yataq, mini bar və lüks şərait.</p>
-        </div>
-    </section>
+<div id="about" class="container">
+    <h2>Haqqında</h2>
+    <p>Bizim otel sizə rahatlıq, müasir şərait və peşəkar xidmət təklif edir. Gəlin və istirahətinizi bizimlə keçirin!</p>
+</div>
 
-    <section id="services">
-        <h2>Xidmətlərimiz</h2>
-        <div class="service">
-            <h3>Restoran və Kafe</h3>
-            <p>Beynəlxalq və yerli mətbəxlə xidmətinizdəyik.</p>
-        </div>
-        <div class="service">
-            <h3>Spa və Fitnes Mərkəzi</h3>
-            <p>Rahatlayın və sağlamlığınızı qoruyun.</p>
-        </div>
-    </section>
+<div id="rooms" class="container">
+    <h2>Otaqlar</h2>
+    <div class="room-card">
+        <img src="room1.jpg" alt="Standard Otaq">
+        <h3>Standard Otaq</h3>
+        <p>Rahat və funksional otaqlar. Qiymət: 100 AZN/gün</p>
+    </div>
+    <div class="room-card">
+        <img src="room2.jpg" alt="Deluxe Otaq">
+        <h3>Deluxe Otaq</h3>
+        <p>Lüks otaqlar və xüsusi xidmətlər. Qiymət: 200 AZN/gün</p>
+    </div>
+    <div class="room-card">
+        <img src="room3.jpg" alt="Suit Otaq">
+        <h3>Suit Otaq</h3>
+        <p>Ən yüksək komfortda otaqlar. Qiymət: 300 AZN/gün</p>
+    </div>
+</div>
 
-    <section id="contact">
-        <h2>Əlaqə</h2>
-        <p>Ünvan: Bakı şəhəri, Nizami küçəsi 123</p>
-        <p>Telefon: +994 50 123 45 67</p>
-        <p>Email: info@dreamhotel.az</p>
-    </section>
+<div id="services" class="container">
+    <h2>Xidmətlər</h2>
+    <ul>
+        <li>İnternet Wi-Fi</li>
+        <li>Spa və masaj xidməti</li>
+        <li>Restoran və kafe</li>
+        <li>Fitness mərkəzi</li>
+        <li>24/7 qəbul xidməti</li>
+    </ul>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Dream Hotel. Bütün hüquqlar qorunur.</p>
-    </footer>
+<div id="contact" class="container">
+    <h2>Əlaqə</h2>
+    <form action="/submit-form" method="POST">
+        <input type="text" name="name" placeholder="Adınızı daxil edin" required>
+        <input type="email" name="email" placeholder="E-poçt ünvanınızı daxil edin" required>
+        <textarea name="message" placeholder="Mesajınızı yazın" rows="4" required></textarea>
+        <button type="submit">Göndər</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 Hotel Saytı - Bütün hüquqlar qorunur</p>
+</footer>
 
 </body>
 </html>
